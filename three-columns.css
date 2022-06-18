@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+  top: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0deg, 0%, 95%);
+}
+body a {
+  text-decoration: none;
+  color: hsl(179deg, 100%, 13%);
+  font-family: "Big Shoulders Display", cursive;
+}
+body a:hover {
+  color: hsl(184deg, 100%, 22%);
+  transition: 0.3s;
+}
+body main {
+  box-sizing: border-box;
+  display: flex;
+  width: 70%;
+  max-width: 800px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+body main img {
+  max-width: 20%;
+  margin-bottom: 1.5rem;
+}
+body main h3 {
+  font-family: "Big Shoulders Display", cursive;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-size: 25px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+body main p {
+  margin-bottom: 7.5em;
+  font-family: "Lexend Deca", sans-serif;
+  color: hsla(0deg, 0%, 100%, 0.75);
+  font-size: 12px;
+  max-width: 160px;
+  line-height: 20px;
+}
+body main section {
+  padding: 2rem;
+}
+body main button {
+  font-family: "Lexend Deca", sans-serif;
+  background-color: hsl(0deg, 0%, 95%);
+  border: none;
+  padding: 10px 19px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+body main section.sedans {
+  background-color: hsl(31deg, 77%, 52%);
+  width: 33%;
+}
+body main section.sedans button {
+  color: hsl(31deg, 77%, 52%);
+}
+body main section.sedans button:hover,
+body main section.sedans button:focus {
+  border: 1px solid hsl(0deg, 0%, 95%);
+  background-color: hsl(31deg, 77%, 52%);
+  color: hsl(0deg, 0%, 95%);
+  transition: 0.4s;
+}
+body main section.suvs {
+  background-color: hsl(184deg, 100%, 22%);
+  width: 33%;
+}
+body main section.suvs button {
+  color: hsl(184deg, 100%, 22%);
+}
+body main section.suvs button:hover,
+body main section.suvs button:focus {
+  border: 1px solid hsl(0deg, 0%, 95%);
+  background-color: hsl(184deg, 100%, 22%);
+  color: hsl(0deg, 0%, 95%);
+  transition: 0.3s;
+}
+body main section.luxury {
+  background-color: hsl(179deg, 100%, 13%);
+  width: 33%;
+}
+body main section.luxury button {
+  color: hsl(179deg, 100%, 13%);
+}
+body main section.luxury button:hover,
+body main section.luxury button:focus {
+  border: 1px solid hsl(0deg, 0%, 95%);
+  background-color: hsl(179deg, 100%, 13%);
+  color: hsl(0deg, 0%, 95%);
+  transition: 0.3s;
+}/*# sourceMappingURL=three-columns.css.map */

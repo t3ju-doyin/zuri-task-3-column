@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+$bigFont: 'Big Shoulders Display', cursive;
+$smallFont:'Lexend Deca', sans-serif ;
+$brightOrange: hsl(31, 77%, 52%);
+$darkCyan: hsl(184, 100%, 22%);
+$veryDarkCyan: hsl(179, 100%, 13%);
+$transparentWhite: hsla(0, 0%, 100%, 0.75);
+// paragraphs
+$veryLightGray : hsl(0, 0%, 95%);
+// (background, headings, buttons)
+*,*::before, *::after{
+    margin: 0;
+    padding: 0;
+}
+body{
+    
+    position: relative;
+    top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $veryLightGray;
+ 
+    
+    main{
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        width: 70%;
+        max-width: 800px;
+        border-radius: 5px;
+        overflow: hidden;
+        margin-bottom: 1rem;
+
+        img{
+            max-width: 20%;
+            margin-bottom: 1.5rem;
+        }
+        h3{
+            font-family: $bigFont;
+            color: $transparentWhite;
+            font-size: 25px;
+            font-weight: bolder;
+            letter-spacing: 1px;
+            margin-bottom: 1.5rem;
+        }
+        p{
+            margin-bottom: 7.5em;
+            font-family: $smallFont;
+            color: $transparentWhite;
+            font-size: 12px;
+            max-width: 160px;
+            line-height: 20px;
+
+        }
+        section{
+            padding: 2rem;
+            
+            
+        }
+        button{
+            font-family: $smallFont;
+            background-color: $veryLightGray;
+            border: none;
+            padding: 10px 19px;
+            border-radius: 20px;
+            cursor: pointer;
+            
+            
+        }
+        
+
+        section.sedans{
+            background-color:$brightOrange ;
+            button{
+                color:$brightOrange ;
+            }
+            button:hover,
+            button:focus{
+                border: 1px solid $veryLightGray;
+                background-color: $brightOrange;
+                color: $veryLightGray;
+                transition: .4s;
+            }
+        }
+        section.suvs{
+            background-color: $darkCyan;
+            button{
+                color: $darkCyan;
+            }
+            button:hover,
+            button:focus{
+                border: 1px solid $veryLightGray;
+                background-color: $darkCyan;
+                color: $veryLightGray;
+                transition: .3s;
+            }
+        }
+        section.luxury{
+            background-color: $veryDarkCyan;
+            button{
+                color: $veryDarkCyan;
+            }
+            button:hover,
+            button:focus{
+                border: 1px solid $veryLightGray;
+                background-color: $veryDarkCyan;
+                color: $veryLightGray;
+                transition: .3s;
+            }
+        }
+    }
+}
